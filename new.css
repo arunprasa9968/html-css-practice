@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f1f3f6;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 40px;
+    height: 64px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
+}
+
+
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f0f5ff;
+    border-radius: 8px;
+    padding: 0 12px;
+    width: 40vw;
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 24px;
+    position: relative;
+}
+
+.search-container i {
+    color: #7b7b7b;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    color: #212121;
+}
+
+
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    flex-direction: column;
+    z-index: 10;
+    padding: 8px 0;
+}
+
+.login-dropdown i.fa-solid.fa-circle-chevron-down:hover {
+  transform: rotate(180deg);
+}
+
+
+
