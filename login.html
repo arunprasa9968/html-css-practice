@@ -1,1 +1,140 @@
-<input type="" class="form-control" placeholder="Search for products, brands and more" aria-label="Search">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);     
+
+    
+   
+   }
+
+ 
+   body .main{
+background: #2A7B9B;
+background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);     
+     width: 50vw;
+    height: 50vh;
+     border-radius: 15px;
+         
+   }
+   .main{
+     box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
+   }
+
+    
+   
+   body h1{
+        color: rgb(184, 16, 108);
+        font-size: 40px;
+        
+        margin-bottom: 20px;
+    }
+  
+    .login{
+        text-align: center;
+        padding: 20px;
+    }
+    .login h1{
+        color: rgb(184, 16, 108);
+        font-size: 30px;
+    }
+    .user-input{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .user-input input{
+        margin: 10px 0;
+        padding: 10px;
+        border-bottom: 10px solid #000;
+        border-top: 0px solid #000;
+        border-left: 0px solid #000;
+        border-right: 0px solid #000;
+        background-color: transparent;
+        border-radius: 15px;
+        color:white;
+        outline: none;
+    }
+    input::placeholder {
+  color: black;
+  font-style: italic;
+  opacity: 1; 
+}
+
+.password , .username{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+    .password i, .username i{
+        position: absolute;
+        right: 10px;
+        
+    }
+    .btn{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    .btn button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+    }
+    .login-btn{
+        background-color: rgb(16, 184, 184);
+    }
+    .register-btn{
+        background-color: rgb(190, 91, 91);
+    }
+</style>
+
+</head>
+<body>
+
+    <div>
+        <h1>
+            Hello! welcome to world of coding
+        </h1>
+    </div>
+    <div class="main">
+
+        <div class="login">
+            <h1>Login</h1>
+         </div>
+         <div class="user-input ">
+           <div class="username"> <input type="text" placeholder="Username" class="username">
+            <i class="fa-solid fa-user"></i></div>
+           <div class="password"> <input type="password" placeholder="Password" class="password">
+           <i class="fa-solid fa-lock"></i></div>
+         </div>
+         <div class="btn">
+             <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+         </div>
+
+
+    </div>
+    
+</body>
+</html>

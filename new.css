@@ -73,6 +73,14 @@ body {
     padding: 8px 0;
 }
 
+.container2 {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f0f5ff;
+}
+
 .login-dropdown i.fa-solid.fa-circle-chevron-down:hover {
   transform: rotate(180deg);
 }
