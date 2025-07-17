@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White-space Wrap Example</title>
+    <style>
+        .nowrap {
+            white-space: normal;
+            border: 1px solid #333;
+            width: 200px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .normalwrap {
+            white-space: normal;
+            border: 1px solid #333;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>white-space: nowrap (no wrapping)</h2>
+    <div class="nowrap">
+        This is a very long line of text that will not wrap to the next line.
+    </div>
+    <h2>white-space: normal (default wrapping)</h2>
+    <div class="normalwrap">
+        This is a very long line of text that will wrap to the next line.
+    </div>
+</body>
+</html>

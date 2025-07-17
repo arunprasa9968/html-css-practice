@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent Sibling Combinator Example</title>
+    <style>
+        /* Selects only <p> elements immediately after an <h2> */
+        h2 ~ p {
+            color: green;
+            font-weight: bold;
+        }
+        /* For comparison: selects all <p> */
+        p {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Heading 1</h2>
+    <p>This paragraph is immediately after h2 (green & bold).</p>
+    <p>This paragraph is not immediately after h2 (gray).</p>
+    <h2>Heading 2</h2>
+    <div>Some content</div>
+    <p>This paragraph is not immediately after h2 (gray).</p>
+    <h2>Heading 3</h2>
+    <span>Other content</span>
+    <p>This paragraph is not immediately after h2 (gray).</p>
+    <h2>Heading 4</h2>
+    <p>This paragraph is immediately after h2 (green & bold).</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Combinator Example</title>
+    <style>
+        /* Selects only direct child <p> of <div> */
+        div > p {
+            color: red;
+            font-weight: bold;
+        }
+        /* For comparison: selects all <p> inside <div> */
+       
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a direct child of div (red & bold).</p>
+        <span>
+            <p>This is a nested child (blue).</p>
+        </span>
+        <p>Another direct child of div (red & bold).</p>
+    </div>
+</body>
+</html>

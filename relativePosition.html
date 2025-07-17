@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relative Position Example</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 100px;
+      background: #4caf50;
+      color: white;
+      margin: 20px;
+      padding: 10px;
+    }
+    .relative {
+      position: static;
+      top: -100px;
+      left: 0px;
+      background: #2196f3;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">Normal Position</div>
+  <div class="box relative">Relative Position (moved)</div>
+  <p>
+    The blue box uses <code>position: relative;</code> and is shifted 30px down and 40px right.<br>
+    The space for the box remains in its original place.
+  </p>
+</body>
+</html>

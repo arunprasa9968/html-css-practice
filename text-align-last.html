@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-wrap Example</title>
+    <style>
+        .break-word {
+            width: 200px;
+            border: 1px solid #333;
+            word-wrap: normal;
+            margin-bottom: 20px;
+ /* Allows long words to break and wrap to the next line */
+                        overflow: hidden;
+        }
+        .no-break-word {
+            width: 200px;
+            border: 1px solid #333;
+            word-wrap: normal; /* Long words will overflow */
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>word-wrap: break-word</h2>
+    <div class="break-word">
+        ThisIsAReallyLongWordThatWillBreakAndWrapToTheNextLineIfNeeded.
+    </div>
+    <h2>word-wrap: normal</h2>
+    <div class="no-break-word">
+        ThisIsAReallyLongWordThatWillNotBreakAndMayOverflowTheBox.
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Position Example</title>
+  <style>
+    body {
+      height: 1200px; /* To enable scrolling */
+    }
+    .fixed {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 180px;
+      height: 60px;
+      background: #ff9800;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="fixed">
+    Fixed Position Box<br>
+    (Stays in place when scrolling)
+  </div>
+  <p>
+    Scroll down to see the orange box stay fixed in the top-right corner of the page.
+  </p>
+</body>
+</html>

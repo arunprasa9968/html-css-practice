@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property Example</title>
+    <style>
+        .static {
+            position: static;
+            background: #cce5ff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .relative {
+            position: relative;
+            left: 30px;
+            background: #d4edda;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .absolute-container {
+            position: relative;
+            height: 100px;
+            background: #f8d7da;
+            margin-bottom: 10px;
+        }
+        .absolute {
+            position: absolute;
+            top: 20px;
+            left: 50px;
+            background: #fff3cd;
+            padding: 10px;
+        }
+        .fixed {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #d1ecf1;
+            padding: 10px;
+            z-index: 100;
+        }
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: #e2e3e5;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>position: static (default)</h2>
+    <div class="static">This is static positioned (default).</div>
+
+    <h2>position: relative</h2>
+    <div class="relative">This is relative positioned (moved 30px right).</div>
+
+    <h2>position: absolute (inside relative container)</h2>
+    <div class="absolute-container">
+        <div class="absolute">This is absolute positioned (inside relative container).</div>
+    </div>
+
+    <h2>position: fixed</h2>
+    <div class="fixed">This is fixed positioned (always at top right).</div>
+
+    <h2>position: sticky</h2>
+    <div class="sticky">This is sticky positioned (sticks to top when scrolling).</div>
+    <div style="height: 300px;"></div>
+</body>
+</html>
